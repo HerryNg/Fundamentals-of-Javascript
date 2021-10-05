@@ -132,20 +132,30 @@ console.log("");
 
 
 function grid(start,  end){
+    
     for( let a = 1; a <= start; a++){
-        if(a % 2 !== 0 ){
-            var x = "1";
-        }else var x = "2";
+        var x = "";
+        for(let b = 1; b <= end; b++)
+        {
+            if(a % 2 !== 0)
+            {
+                if(b % 2 !== 0)
+                {
+                    x += " ";
+                }else x += "#";
+            }else{
+                if(b % 2 !== 0)
+                {
+                    x += "#";
+                }else x += " ";
+            }
 
-        for(let b = 2; b <= end; b++)
-            if(b % 2 !== 0){
-                var x =+ "1";
-            }else var x =+ "2";
+        }
 
         
          console.log(x)
     }
 
 }
-grid(4, 4);
+grid(8, 8);
 
