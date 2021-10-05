@@ -85,20 +85,69 @@ function captureTime(){
 
     let yourAgeInSeconds = yourAgeInMilliSeconds * 1000;
     let yourAgeInMins = yourAgeInSeconds * 60;
-    let youAgeInhours = yourAgeInMins * 60;
-    let youAgeInDays = youAgeInhours * 24;
-    let yourAgeInWeeks = youAgeInDays * 7;
+    let yourAgeInhours = yourAgeInMins * 60;
+    let yourAgeInDays = yourAgeInhours * 24;
+    let yourAgeInWeeks = yourAgeInDays * 7;
     let yourAgeInMonths = yourAgeInWeeks * 4;
     let yourAgeInYears = yourAgeInMonths * 12;
 
-    console.log("Your age in millisecond is: " +yourAgeInMilliSeconds);
+    console.log("Your age in millisecond is: " + yourAgeInMilliSeconds);
     console.log("Your age in seconds is: " + yourAgeInSeconds);
     console.log("Your age in minutes is: " + yourAgeInMins);
-    console.log("Your age in hours is: " + youAgeInhours);
-    console.log("Yout age in days is: " + youAgeInDays);
+    console.log("Your age in hours is: " + yourAgeInhours);
+    console.log("Yout age in days is: " + yourAgeInDays);
     console.log("Your age in weeks is: " + yourAgeInWeeks);
     console.log("Your age in months is: " + yourAgeInMonths);
     console.log("Your age in years is: " + yourAgeInYears);
 
 }
 captureTime();
+
+//Advanced Random Number
+function getRandom(start, end){
+    for(let i = start; i <= end; i++)
+    {
+        console.log(start + Math.round(Math.random() *(end - start)));
+    }
+}
+getRandom(5, 8);
+console.log("");
+console.log("");
+console.log("");
+
+//Nested For Loop
+function nestForLoop(n){
+    for (var i = 1; i <= n; i++) {
+      
+        var s = i;
+        
+        for (var j = 2; j <= i; j++) {
+          s += " " + i;
+        }
+        console.log(s);
+      }
+}
+nestForLoop(4);
+console.log("");
+console.log("");
+console.log("");
+
+
+function grid(start,  end){
+    for( let a = 1; a <= start; a++){
+        if(a % 2 !== 0 ){
+            var x = "1";
+        }else var x = "2";
+
+        for(let b = 2; b <= end; b++)
+            if(b % 2 !== 0){
+                var x =+ "1";
+            }else var x =+ "2";
+
+        
+         console.log(x)
+    }
+
+}
+grid(4, 4);
+
