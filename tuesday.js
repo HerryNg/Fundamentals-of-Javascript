@@ -159,3 +159,51 @@ function grid(start,  end){
 }
 grid(8, 8);
 
+
+//Iterate over Arras
+function iteratedOverArrays(){
+    var workingHours = [6, 6, 7, 7, 8, 8, 6, 7, 8, 7];
+    var sum = 0;
+    for(let i = 0; i <10; i++)
+    {
+         sum += workingHours[i] * 25;
+    }
+    console.log("Peter earn $ " + (workingHours[9] * 25) + " today");
+    console.log("Peter earn $ " + sum +" for the last two week");
+
+    var workingHourInOneYear = [];
+    for(let i=0; i < 250; i++)
+    {
+        workingHourInOneYear.push(6 + Math.round(Math.random() * 2));
+    }
+     var totalInOneYear = 0;
+     for(let i = 0; i <250; i++)
+     {
+          totalInOneYear += workingHourInOneYear[i] * 25;
+     }
+     console.log("Peter earn $ " + totalInOneYear +" for one year");
+
+}
+iteratedOverArrays();
+
+//Truthy/Falsy
+function truthyOrFalsy(){
+    const one = 1;
+    const zero = 0;
+    console.log("Is one truthy/falsy?");
+if (one) {
+  console.log("Is truthy");
+}
+
+console.log("Is Zero truthy/falsy?");
+if (zero) {
+    console.log("Is truthy");
+  } else {
+    console.log("Isn't truth");
+  }
+
+
+
+
+}
+truthyOrFalsy();
