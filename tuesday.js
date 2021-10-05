@@ -48,8 +48,6 @@ function gcd(a, b){
 }
 gcd(12, 18);
 
-//LCM
-
 //Prime Number
 function isPrime(a){
     if(a ===2)
