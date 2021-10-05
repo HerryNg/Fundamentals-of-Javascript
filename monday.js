@@ -182,7 +182,7 @@ random();
 function magic_8_ball(){
     console.log("Can I become a programmer?");
     var ranNum = Math.round(Math.random() * 1);
-    if(ranNum = 0)
+    if(ranNum === 0)
     {
         console.log("Yes, you will.")
     }else console.log("No, you won't.")
